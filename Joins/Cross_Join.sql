@@ -1,3 +1,3 @@
-SELECT ingredientes.nome, ingredientes.ID_prato, ingredientes.ID_bebida
+SELECT ingredientes.nome, pedidos.ID_prato
 FROM Ingredientes
-CROSS JOIN Pedidos
+CROSS JOIN Pedidos;
