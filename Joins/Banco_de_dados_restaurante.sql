@@ -10,7 +10,7 @@ CREATE TABLE FILIAIS (
     ENDERECO VARCHAR(255),
     EMAIL VARCHAR(255),
     TELEFONE VARCHAR(12),
-    QUANT_MESAS INT,
+    QUANTIDADE_MESAS INT,
     AVALIACAO DECIMAL(4,2),
     PRIMARY KEY (ID_FILIAL)
 );
@@ -143,7 +143,7 @@ CREATE TABLE ENTREGAS (
 USE RESTAURANTE;
 
 -- Inserindo dados na tabela FILIAIS
-INSERT INTO FILIAIS (ENDERECO, EMAIL, TELEFONE, QUANT_MESAS, AVALIACAO) VALUES
+INSERT INTO FILIAIS (ENDERECO, EMAIL, TELEFONE, QUANTIDADE_MESAS, AVALIACAO) VALUES
 ('Rua das Flores, 123', 'filial1@restaurante.com', '1111-1111', 20, 4.5),
 ('Avenida Central, 456', 'filial2@restaurante.com', '2222-2222', 30, 4.2),
 ('Rua da Praia, 789', 'filial3@restaurante.com', '3333-3333', 15, 4.7),
@@ -208,36 +208,36 @@ INSERT INTO FILIAIS (ENDERECO, EMAIL, TELEFONE, QUANT_MESAS, AVALIACAO) VALUES
 
 -- Inserindo dados na tabela CLIENTES
 INSERT INTO CLIENTES (CPF, NOME, SENHA, SEXO, IDADE, ENDERECO, EMAIL, TELEFONE, DATA_CADASTRO, ID_FILIAL) VALUES
-('12345678901', 'João Silva', 'senha123', 'M', 30, 'Rua A, 10', 'joao@exemplo.com', '1111-1111', NOW(), 1),
-('23456789012', 'Maria Oliveira', 'senha456', 'F', 25, 'Rua B, 20', 'maria@exemplo.com', '2222-2222', NOW(), 2),
-('34567890123', 'Pedro Santos', 'senha789', 'M', 40, 'Rua C, 30', 'pedro@exemplo.com', '3333-3333', NOW(), 3),
-('45678901234', 'Ana Costa', 'senha101', 'F', 35, 'Rua D, 40', 'ana@exemplo.com', '4444-4444', NOW(), 4),
-('56789012345', 'Carlos Pereira', 'senha202', 'M', 28, 'Rua E, 50', 'carlos@exemplo.com', '5555-5555', NOW(), 5),
-('67890123456', 'Patrícia Almeida', 'senha303', 'F', 33, 'Rua F, 60', 'patricia@exemplo.com', '6666-6666', NOW(), 6),
-('78901234567', 'Lucas Martins', 'senha404', 'M', 27, 'Rua G, 70', 'lucas@exemplo.com', '7777-7777', NOW(), 7),
-('89012345678', 'Juliana Rocha', 'senha505', 'F', 22, 'Rua H, 80', 'juliana@exemplo.com', '8888-8888', NOW(), 8),
-('90123456789', 'Rafael Lima', 'senha606', 'M', 31, 'Rua I, 90', 'rafael@exemplo.com', '9999-9999', NOW(), 9),
-('01234567890', 'Fernanda Souza', 'senha707', 'F', 29, 'Rua J, 100', 'fernanda@exemplo.com', '0000-0000', NOW(), 10),
-('12345678901', 'Lucas Ferreira', 'senha818', 'M', 22, 'Rua U, 210', 'lucas.ferreira@exemplo.com', '1111-2222', NOW(), 1),
-('23456789012', 'Patricia Lima', 'senha919', 'F', 27, 'Rua V, 220', 'patricia.lima@exemplo.com', '2222-3333', NOW(), 2),
-('34567890123', 'Rafael Costa', 'senha020', 'M', 31, 'Rua W, 230', 'rafael.costa@exemplo.com', '3333-4444', NOW(), 3),
+('92345678901', 'João Silva', 'senha123', 'M', 30, 'Rua A, 10', 'joao@exemplo.com', '1111-1111', NOW(), 1),
+('83456789012', 'Maria Oliveira', 'senha456', 'F', 25, 'Rua B, 20', 'maria@exemplo.com', '2222-2222', NOW(), 2),
+('74567890123', 'Pedro Santos', 'senha789', 'M', 40, 'Rua C, 30', 'pedro@exemplo.com', '3333-3333', NOW(), 3),
+('65678901234', 'Ana Costa', 'senha101', 'F', 35, 'Rua D, 40', 'ana@exemplo.com', '4444-4444', NOW(), 4),
+('06789012345', 'Carlos Pereira', 'senha202', 'M', 28, 'Rua E, 50', 'carlos@exemplo.com', '5555-5555', NOW(), 5),
+('57890123456', 'Patrícia Almeida', 'senha303', 'F', 33, 'Rua F, 60', 'patricia@exemplo.com', '6666-6666', NOW(), 6),
+('18901234567', 'Lucas Martins', 'senha404', 'M', 27, 'Rua G, 70', 'lucas@exemplo.com', '7777-7777', NOW(), 7),
+('39012345678', 'Juliana Rocha', 'senha505', 'F', 22, 'Rua H, 80', 'juliana@exemplo.com', '8888-8888', NOW(), 8),
+('10123456789', 'Rafael Lima', 'senha606', 'M', 31, 'Rua I, 90', 'rafael@exemplo.com', '9999-9999', NOW(), 9),
+('81234567890', 'Fernanda Souza', 'senha707', 'F', 29, 'Rua J, 100', 'fernanda@exemplo.com', '0000-0000', NOW(), 10),
+('52345678901', 'Lucas Ferreira', 'senha818', 'M', 22, 'Rua U, 210', 'lucas.ferreira@exemplo.com', '1111-2222', NOW(), 1),
+('43456789012', 'Patricia Lima', 'senha919', 'F', 27, 'Rua V, 220', 'patricia.lima@exemplo.com', '2222-3333', NOW(), 2),
+('37456789013', 'Rafael Costa', 'senha020', 'M', 31, 'Rua W, 230', 'rafael.costa@exemplo.com', '3333-4444', NOW(), 3),
 ('45678901234', 'Ana Beatriz', 'senha121', 'F', 28, 'Rua X, 240', 'ana.beatriz@exemplo.com', '4444-5555', NOW(), 4),
-('56789012345', 'Carlos Silva', 'senha222', 'M', 35, 'Rua Y, 250', 'carlos.silva@exemplo.com', '5555-6666', NOW(), 5),
-('67890123456', 'Juliana Alves', 'senha323', 'F', 30, 'Rua Z, 260', 'juliana.alves@exemplo.com', '6666-7777', NOW(), 6),
+('56789012945', 'Carlos Silva', 'senha222', 'M', 35, 'Rua Y, 250', 'carlos.silva@exemplo.com', '5555-6666', NOW(), 5),
+('67890143456', 'Juliana Alves', 'senha323', 'F', 30, 'Rua Z, 260', 'juliana.alves@exemplo.com', '6666-7777', NOW(), 6),
 ('78901234567', 'Marcos Pereira', 'senha424', 'M', 29, 'Rua AA, 270', 'marcos.pereira@exemplo.com', '7777-8888', NOW(), 7),
-('89012345678', 'Fernanda Martins', 'senha525', 'F', 26, 'Rua AB, 280', 'fernanda.martins@exemplo.com', '8888-9999', NOW(), 8),
+('89019345678', 'Fernanda Martins', 'senha525', 'F', 26, 'Rua AB, 280', 'fernanda.martins@exemplo.com', '8888-9999', NOW(), 8),
 ('90123456789', 'Diego Almeida', 'senha626', 'M', 33, 'Rua AC, 290', 'diego.almeida@exemplo.com', '9999-0000', NOW(), 9),
-('01234567890', 'Claudia Rocha', 'senha727', 'F', 34, 'Rua AD, 300', 'claudia.rocha@exemplo.com', '0000-1111', NOW(), 10),
-('11223344556', 'Bruno Nascimento', 'senha828', 'M', 38, 'Rua AE, 310', 'bruno.nascimento@exemplo.com', '1111-2222', NOW(), 1),
-('22334455667', 'Samantha Dias', 'senha929', 'F', 25, 'Rua AF, 320', 'samantha.dias@exemplo.com', '2222-3333', NOW(), 2),
-('33445566778', 'Guilherme Lopes', 'senha030', 'M', 27, 'Rua AG, 330', 'guilherme.lopes@exemplo.com', '3333-4444', NOW(), 3),
-('44556677889', 'Carla Mendes', 'senha131', 'F', 32, 'Rua AH, 340', 'carla.mendes@exemplo.com', '4444-5555', NOW(), 4),
-('55667788990', 'André Teixeira', 'senha232', 'M', 40, 'Rua AI, 350', 'andre.teixeira@exemplo.com', '5555-6666', NOW(), 5),
-('66778899001', 'Luana Costa', 'senha333', 'F', 23, 'Rua AJ, 360', 'luana.costa@exemplo.com', '6666-7777', NOW(), 6),
-('77889900112', 'Felipe Rocha', 'senha434', 'M', 36, 'Rua AK, 370', 'felipe.rocha@exemplo.com', '7777-8888', NOW(), 7),
-('88990011223', 'Mariana Gomes', 'senha535', 'F', 30, 'Rua AL, 380', 'mariana.gomes@exemplo.com', '8888-9999', NOW(), 8),
-('99001122334', 'Ricardo Alves', 'senha636', 'M', 29, 'Rua AM, 390', 'ricardo.alves@exemplo.com', '9999-0000', NOW(), 9),
-('00112233445', 'Vanessa Lima', 'senha737', 'F', 31, 'Rua AN, 400', 'vanessa.lima@exemplo.com', '0000-1111', NOW(), 10);
+('01264567890', 'Claudia Rocha', 'senha727', 'F', 34, 'Rua AD, 300', 'claudia.rocha@exemplo.com', '0000-1111', NOW(), 10),
+('11293344556', 'Bruno Nascimento', 'senha828', 'M', 38, 'Rua AE, 310', 'bruno.nascimento@exemplo.com', '1111-2222', NOW(), 1),
+('22234455667', 'Samantha Dias', 'senha929', 'F', 25, 'Rua AF, 320', 'samantha.dias@exemplo.com', '2222-3333', NOW(), 2),
+('30445566778', 'Guilherme Lopes', 'senha030', 'M', 27, 'Rua AG, 330', 'guilherme.lopes@exemplo.com', '3333-4444', NOW(), 3),
+('14556677889', 'Carla Mendes', 'senha131', 'F', 32, 'Rua AH, 340', 'carla.mendes@exemplo.com', '4444-5555', NOW(), 4),
+('95667788990', 'André Teixeira', 'senha232', 'M', 40, 'Rua AI, 350', 'andre.teixeira@exemplo.com', '5555-6666', NOW(), 5),
+('63778899001', 'Luana Costa', 'senha333', 'F', 23, 'Rua AJ, 360', 'luana.costa@exemplo.com', '6666-7777', NOW(), 6),
+('27889900112', 'Felipe Rocha', 'senha434', 'M', 36, 'Rua AK, 370', 'felipe.rocha@exemplo.com', '7777-8888', NOW(), 7),
+('38990011223', 'Mariana Gomes', 'senha535', 'F', 30, 'Rua AL, 380', 'mariana.gomes@exemplo.com', '8888-9999', NOW(), 8),
+('59001122334', 'Ricardo Alves', 'senha636', 'M', 29, 'Rua AM, 390', 'ricardo.alves@exemplo.com', '9999-0000', NOW(), 9),
+('40112233445', 'Vanessa Lima', 'senha737', 'F', 31, 'Rua AN, 400', 'vanessa.lima@exemplo.com', '0000-1111', NOW(), 10);
 
 -- Inserindo dados na tabela FUNCIONARIOS
 INSERT INTO FUNCIONARIOS (CPF, NOME, SENHA, SEXO, IDADE, ENDERECO, EMAIL, TELEFONE, ID_FILIAL, CARGO, DATA_CONTRATACAO) VALUES
