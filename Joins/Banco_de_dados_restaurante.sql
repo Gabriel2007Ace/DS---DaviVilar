@@ -237,7 +237,33 @@ INSERT INTO CLIENTES (CPF, NOME, SENHA, SEXO, IDADE, ENDERECO, EMAIL, TELEFONE, 
 ('27889900112', 'Felipe Rocha', 'senha434', 'M', 36, 'Rua AK, 370', 'felipe.rocha@exemplo.com', '7777-8888', NOW(), 7),
 ('38990011223', 'Mariana Gomes', 'senha535', 'F', 30, 'Rua AL, 380', 'mariana.gomes@exemplo.com', '8888-9999', NOW(), 8),
 ('59001122334', 'Ricardo Alves', 'senha636', 'M', 29, 'Rua AM, 390', 'ricardo.alves@exemplo.com', '9999-0000', NOW(), 9),
-('40112233445', 'Vanessa Lima', 'senha737', 'F', 31, 'Rua AN, 400', 'vanessa.lima@exemplo.com', '0000-1111', NOW(), 10);
+('40112233445', 'Vanessa Lima', 'senha737', 'F', 31, 'Rua AN, 400', 'vanessa.lima@exemplo.com', '0000-1111', NOW(), 10),
+('11111111111', 'Jéssica Ferreira', 'senha838', 'F', 27, 'Rua AO, 410', 'jessica.ferreira@exemplo.com', '1111-1112', NOW(), 1),
+('22222222222', 'Thiago Souza', 'senha939', 'M', 34, 'Rua AP, 420', 'thiago.souza@exemplo.com', '2222-2224', NOW(), 2),
+('33333333333', 'Letícia Almeida', 'senha040', 'F', 29, 'Rua AQ, 430', 'leticia.almeida@exemplo.com', '3333-3336', NOW(), 3),
+('44444444444', 'Eduardo Lima', 'senha141', 'M', 32, 'Rua AR, 440', 'eduardo.lima@exemplo.com', '4444-4448', NOW(), 4),
+('55555555555', 'Patrícia Costa', 'senha242', 'F', 30, 'Rua AS, 450', 'patricia.costa@exemplo.com', '5555-5550', NOW(), 5),
+('66666666666', 'Marcos Dias', 'senha343', 'M', 35, 'Rua AT, 460', 'marcos.dias@exemplo.com', '6666-6662', NOW(), 6),
+('77777777777', 'Tânia Rocha', 'senha444', 'F', 31, 'Rua AU, 470', 'tania.rocha@exemplo.com', '7777-7774', NOW(), 7),
+('88888888888', 'Ronaldo Santos', 'senha545', 'M', 38, 'Rua AV, 480', 'ronaldo.santos@exemplo.com', '8888-8886', NOW(), 8),
+('99999999999', 'Cynthia Alves', 'senha646', 'F', 26, 'Rua AW, 490', 'cynthia.alves@exemplo.com', '9999-9998', NOW(), 9),
+('10101010101', 'Felipe Nascimento', 'senha747', 'M', 28, 'Rua AX, 500', 'felipe.nascimento@exemplo.com', '0000-1113', NOW(), 10),
+('12121212121', 'Bruna Mendes', 'senha848', 'F', 33, 'Rua AY, 510', 'bruna.mendes@exemplo.com', '1111-2225', NOW(), 1),
+('13131313131', 'Gustavo Martins', 'senha949', 'M', 29, 'Rua AZ, 520', 'gustavo.martins@exemplo.com', '2222-3337', NOW(), 2),
+('14141414141', 'Sofia Lopes', 'senha050', 'F', 24, 'Rua BA, 530', 'sofia.lopes@exemplo.com', '3333-4449', NOW(), 3),
+('15151515151', 'Leonardo Rocha', 'senha151', 'M', 37, 'Rua BB, 540', 'leonardo.rocha@exemplo.com', '4444-5551', NOW(), 4),
+('16161616161', 'Alice Ferreira', 'senha252', 'F', 32, 'Rua BC, 550', 'alice.ferreira@exemplo.com', '5555-6663', NOW(), 5),
+('17171717171', 'Fernando Almeida', 'senha353', 'M', 30, 'Rua BD, 560', 'fernando.almeida@exemplo.com', '6666-7775', NOW(), 6),
+('18181818181', 'Larissa Costa', 'senha454', 'F', 25, 'Rua BE, 570', 'larissa.costa@exemplo.com', '7777-8887', NOW(), 7),
+('19191919191', 'Vinícius Teixeira', 'senha555', 'M', 29, 'Rua BF, 580', 'vinicius.teixeira@exemplo.com', '8888-9990', NOW(), 8),
+('20202020202', 'Giovana Dias', 'senha656', 'F', 30, 'Rua BG, 590', 'giovana.dias@exemplo.com', '9999-0001', NOW(), 9),
+('21212121212', 'Anderson Silva', 'senha757', 'M', 31, 'Rua BH, 600', 'anderson.silva@exemplo.com', '0000-1114', NOW(), 10),
+('22222222223', 'Isabela Nascimento', 'senha858', 'F', 34, 'Rua BI, 610', 'isabela.nascimento@exemplo.com', '1111-2226', NOW(), 1),
+('23232323232', 'Renan Ferreira', 'senha959', 'M', 36, 'Rua BJ, 620', 'renan.ferreira@exemplo.com', '2222-3338', NOW(), 2),
+('24242424242', 'Juliana Santos', 'senha060', 'F', 27, 'Rua BK, 630', 'juliana.santos@exemplo.com', '3333-4440', NOW(), 3),
+('25252525252', 'Carlos Alberto', 'senha161', 'M', 30, 'Rua BL, 640', 'carlos.alberto@exemplo.com', '4444-5552', NOW(), 4),
+('26262626262', 'Karla Mendes', 'senha262', 'F', 29, 'Rua BM, 650', 'karla.mendes@exemplo.com', '5555-6664', NOW(), 5),
+('27272727272', 'João Paulo', 'senha363', 'M', 32, 'Rua BN, 660', 'joao.paulo@exemplo.com', '6666-7776', NOW(), 6);
 
 -- Inserindo dados na tabela FUNCIONARIOS
 INSERT INTO FUNCIONARIOS (CPF, NOME, SENHA, SEXO, IDADE, ENDERECO, EMAIL, TELEFONE, ID_FILIAL, CARGO, DATA_CONTRATACAO) VALUES
@@ -360,21 +386,9 @@ INSERT INTO RESERVAS (DATA_RESERVA, ID_CLIENTE, MESA, ID_FILIAL, CAPACIDADE) VAL
 (NOW(), 53, 'Mesa 53', 3, 2),
 (NOW(), 54, 'Mesa 54', 4, 5),
 (NOW(), 55, 'Mesa 55', 5, 8),
-(NOW(), 56, 'Mesa 56', 6, 3),
-(NOW(), 57, 'Mesa 57', 7, 4),
-(NOW(), 58, 'Mesa 58', 8, 5),
-(NOW(), 59, 'Mesa 59', 9, 7),
-(NOW(), 60, 'Mesa 60', 10, 6),
-(NOW(), 61, 'Mesa 61', 1, 4),
-(NOW(), 62, 'Mesa 62', 2, 6),
-(NOW(), 63, 'Mesa 63', 3, 2),
-(NOW(), 64, 'Mesa 64', 4, 5),
-(NOW(), 65, 'Mesa 65', 5, 8),
-(NOW(), 66, 'Mesa 66', 6, 3),
-(NOW(), 67, 'Mesa 67', 7, 4),
-(NOW(), 68, 'Mesa 68', 8, 5),
-(NOW(), 69, 'Mesa 69', 9, 7),
-(NOW(), 70, 'Mesa 70', 10, 6);
+(NOW(), 56, 'Mesa 56', 6, 3);
+
+
 
 -- Inserindo dados na tabela FORNECEDORES
 INSERT INTO FORNECEDORES (NOME, CNPJ, TIPO_MATERIAL, EMAIL, TELEFONE, VALOR_MATERIAL) VALUES
@@ -820,3 +834,19 @@ INSERT INTO ESTOQUE (ID_INGREDIENTE, ID_FORNECEDOR, QUANTIDADE, QUANTIDADE_MINIM
 (28, 18, 90, 9, 8),
 (29, 19, 55, 6, 9),
 (30, 20, 125, 10, 10);
+
+
+SELECT COUNT(*) FROM CLIENTES;
+SELECT COUNT(*) FROM FUNCIONARIOS;
+SELECT COUNT(*) FROM PEDIDOS;
+SELECT AVG(qtd_pedidos) AS media_pedidos_por_cliente
+FROM (
+    SELECT ID_CLIENTE, COUNT(*) AS qtd_pedidos
+    FROM PEDIDOS
+    GROUP BY ID_CLIENTE
+) AS subconsulta;
+SELECT COUNT(*) FROM PEDIDOS WHERE STATUS = 'Entregue';
+
+/*
+Membros do grupo: Gabriel Acevedo, João Souto, Henrique, Caio e Adriano
+*/
