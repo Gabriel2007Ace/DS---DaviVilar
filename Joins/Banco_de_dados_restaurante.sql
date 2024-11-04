@@ -18,7 +18,7 @@ CREATE TABLE FILIAIS (
 -- Tabela de Clientes
 CREATE TABLE CLIENTES (
     ID_CLIENTE INT AUTO_INCREMENT,
-    CPF VARCHAR(14),
+    CPF VARCHAR(14) UNIQUE,	
     NOME VARCHAR(255),
     SENHA VARCHAR(255),
     SEXO VARCHAR(10),
@@ -35,7 +35,7 @@ CREATE TABLE CLIENTES (
 -- Tabela de Funcionários
 CREATE TABLE FUNCIONARIOS (
     ID_FUNC INT AUTO_INCREMENT,
-    CPF VARCHAR(14),
+    CPF VARCHAR(14) UNIQUE,
     SENHA VARCHAR(14),
     NOME VARCHAR(255),
     SEXO VARCHAR(10),
@@ -89,7 +89,7 @@ CREATE TABLE BEBIDAS (
     ID_BEBIDA INT AUTO_INCREMENT,
     NOME VARCHAR(255),
     DESCRICAO VARCHAR(255),
-    VALOR DECIMAL(4,2),
+    VALOR DECIMAL(5,2),
     PRIMARY KEY (ID_BEBIDA)
 );
 
@@ -263,6 +263,7 @@ INSERT INTO CLIENTES (CPF, NOME, SENHA, SEXO, IDADE, ENDERECO, EMAIL, TELEFONE, 
 ('24242424242', 'Juliana Santos', 'senha060', 'F', 27, 'Rua BK, 630', 'juliana.santos@exemplo.com', '3333-4440', NOW(), 3),
 ('25252525252', 'Carlos Alberto', 'senha161', 'M', 30, 'Rua BL, 640', 'carlos.alberto@exemplo.com', '4444-5552', NOW(), 4),
 ('26262626262', 'Karla Mendes', 'senha262', 'F', 29, 'Rua BM, 650', 'karla.mendes@exemplo.com', '5555-6664', NOW(), 5),
+('17272727272', 'João Paulo', 'senha363', 'M', 32, 'Rua BN, 660', 'roao.paulo@exemplo.com', '6666-7776', NOW(), 9),
 ('27272727272', 'João Paulo', 'senha363', 'M', 32, 'Rua BN, 660', 'joao.paulo@exemplo.com', '6666-7776', NOW(), 6);
 
 -- Inserindo dados na tabela FUNCIONARIOS
@@ -386,9 +387,8 @@ INSERT INTO RESERVAS (DATA_RESERVA, ID_CLIENTE, MESA, ID_FILIAL, CAPACIDADE) VAL
 (NOW(), 53, 'Mesa 53', 3, 2),
 (NOW(), 54, 'Mesa 54', 4, 5),
 (NOW(), 55, 'Mesa 55', 5, 8),
-(NOW(), 56, 'Mesa 56', 6, 3);
-
-
+(NOW(), 56, 'Mesa 56', 6, 3),
+(NOW(), 57, 'Mesa 57', 6, 3);
 
 -- Inserindo dados na tabela FORNECEDORES
 INSERT INTO FORNECEDORES (NOME, CNPJ, TIPO_MATERIAL, EMAIL, TELEFONE, VALOR_MATERIAL) VALUES
